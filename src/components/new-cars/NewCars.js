@@ -76,7 +76,7 @@ const NewCars = () => {
                             </>
                     }
                 </div>
-                <button className='btn-more'>View more new cars</button>
+                <button className='btn-more u-cursor-pointer'>View more new cars</button>
             </div>
         </section>
     )

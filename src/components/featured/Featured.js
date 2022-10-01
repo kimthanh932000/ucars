@@ -40,7 +40,7 @@ const Featured = () => {
                         <p className="p-featured__text">One of our biggest product to be featured and that has sold out the most.</p>
                     </div>
                     {
-                        !isMobile && <button className='btn--primary u-border-radius-sm'>View More</button>
+                        !isMobile && <button className='btn--primary u-border-radius-sm u-no-wrap'>View More</button>
                     }
                 </div>
                 <div className="p-featured-list">

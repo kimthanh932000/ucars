@@ -153,3 +153,7 @@ body {
 .u-text-red {
   color: var(--clr-red)
 }
+
+.u-cursor-pointer {
+  cursor: pointer;
+}
