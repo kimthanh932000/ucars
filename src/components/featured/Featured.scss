@@ -1,0 +1,67 @@
+.p-featured {
+    padding: 8rem 0 13rem 6.4rem;
+
+    @media screen and (max-width: 768px) {
+        background: #E0E0E0;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+
+    &-headline {
+        display: flex;
+        justify-content: space-between;
+
+
+        div {
+            @media screen and (max-width: 768px) {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+
+        button {
+            align-self: flex-end;
+            margin-right: 6rem;
+            padding: 1.1rem 4.8rem;
+            font-family: var(--secondary-2-ff);
+            font-size: 1.6rem;
+        }
+    }
+
+    &__title {
+        font-family: var(--typography-h2-ff);
+        font-size: var(--typography-h2-fs);
+        font-weight: var(--typography-h2-fw);
+        line-height: var(--typography-h2-lh);
+        color: var(--clr-red);
+
+        @media screen and (max-width: 768px) {
+            font-size: 3.2rem;
+        }
+    }
+
+    &__text {
+        font-size: 3.2rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
+
+    &-list {
+        margin-top: 6.7rem;
+    }
+
+    .btn-sp {
+        display: block;
+        padding: 1.1rem 4.8rem;
+        font-family: var(--secondary-2-ff);
+        font-size: 1.6rem;
+        margin-top: 4.3rem;
+        margin-left: auto;
+        margin-right: 1.6rem;
+    }
+}

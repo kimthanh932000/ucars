@@ -1,0 +1,46 @@
+.p-featured-car {
+    width: 35.1rem;
+
+    @media screen and (max-width: 768px) {
+        background: #fff;
+        border-radius: 0px 39.7214px;
+        padding: 7px 2.7rem;
+        margin: 0 auto;
+    }
+
+    img {
+        @media screen and (max-width: 768px) {
+            width: 30.1rem;
+        }
+    }
+
+    &-details {
+        margin-top: 5.6rem;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            display: block;
+        }
+    }
+
+    .right {
+        margin-top: 2rem;
+    }
+
+    &__name {
+        font-size: 3.2rem;
+        font-weight: 500;
+    }
+
+    &__type,
+    &__model,
+    &__price {
+        font-size: 1.9rem;
+    }
+
+    &__price {
+        color: var(--clr-red);
+        font-weight: 700;
+    }
+}

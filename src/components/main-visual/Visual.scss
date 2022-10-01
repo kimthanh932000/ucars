@@ -1,0 +1,66 @@
+.p-visual {
+    color: #fff;
+    background: url('../../assets/images/main-visual/3d-render-fleet-delivery-vehicles\ 1.jpg') center;
+    background-size: cover;
+
+    @media screen and (max-width: 768px) {
+        width: 97%;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 22rem;
+        border-radius: 5px;
+    }
+
+    .content-box {
+        padding-top: 9.7rem;
+        padding-left: 10.8rem;
+        height: 53rem;
+
+        @media screen and (max-width: 768px) {
+            padding-top: 4rem;
+            padding-left: 2rem;
+            height: 5rem;
+        }
+    }
+
+    &__title {
+        font-family: var(--typography-h1-ff);
+        font-size: var(--typography-h1-fs);
+        font-weight: var(--typography-h1-fw);
+        line-height: var(--typography-h1-lh);
+
+        @media screen and (max-width: 768px) {
+            font-size: 2rem;
+            line-height: 0;
+        }
+    }
+
+    &__text {
+        color: var(--clr-grey-light);
+        font-family: var(--secondary-2-ff);
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        margin-top: 1.6rem;
+        margin-bottom: 3.2rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: 1rem;
+            line-height: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__btn {
+        font-family: var(--secondary-2-ff);
+        font-size: 1.8rem;
+        line-height: 3rem;
+        padding: 1rem 4.7rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.2rem;
+            padding: 3px 3rem;
+            border-radius: 5px;
+        }
+    }
+}

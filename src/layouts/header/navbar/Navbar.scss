@@ -1,0 +1,37 @@
+.navbar {
+    background-color: var(--clr-black);
+    padding: 0 5rem;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.8rem 0;
+    }
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 6.5rem;
+    }
+    &__item {
+        margin-right: 4.6rem;
+    }
+    &__link {
+        color: #fff;
+        font-family: var(--typography-nav-ff);
+        font-size: var(--typography-nav-fs);
+        font-weight: var(--typography-nav-fw);
+        line-height: var(--typography-nav-lh);
+    }
+    &__btn {
+        font-family: var(--secondary-2-ff);
+        padding: 1rem 6.8rem;
+
+        @media screen and (max-width: 844px) {
+            padding: .5rem 3rem;
+        }
+    }
+}

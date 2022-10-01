@@ -1,0 +1,19 @@
+.p-terms {
+    margin-top: 8rem;
+    padding: 4rem 9rem;
+    background-color: #F1F1F1;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    &__heading {
+        // font-weight: 600;
+        margin-bottom: 1.6rem;
+    }
+
+    .content-box {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+}

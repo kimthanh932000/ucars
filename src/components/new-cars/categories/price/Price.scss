@@ -1,0 +1,47 @@
+.sub-menu {
+
+    .price {
+        display: flex;
+
+        span {
+            display: block;
+
+        }
+
+        &-box {
+            padding: .8rem 7.7rem .8rem 1.6rem;
+            border: 1px solid var(--clr-grey-light);
+            border-radius: 5px;
+            white-space: nowrap;
+            position: relative;
+
+            &:first-child {
+                margin-right: 3.2rem;
+
+            }
+
+            &:first-child::after {
+                display: block;
+                content: '';
+                width: 8px;
+                height: 2px;
+                background-color: var(--clr-black);
+                position: absolute;
+                top: 50%;
+                left: 108%;
+            }
+        }
+
+        .title {
+            font-size: 1.2rem;
+            margin-bottom: 4px;
+            color: #8C8C8C;
+        }
+
+        .value {
+            font-size: 1.4rem;
+        }
+    }
+
+
+}

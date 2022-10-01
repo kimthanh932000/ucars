@@ -1,0 +1,50 @@
+.p-hiw {
+    margin-top: 5rem;
+    background: var(--clr-black);
+    padding: 2rem 7rem 10rem;
+    color: #fff;
+
+    @media screen and (max-width: 768px) {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+
+    &__title {
+        font-family: var(--typography-h2-ff);
+        font-weight: var(--typography-h2-fw);
+        font-size: var(--typography-h2-fs);
+        line-height: var(--typography-h2-lh);
+        color: var(--clr-red);
+        text-align: center;
+
+        @media screen and (max-width: 768px) {
+            font-size: 3.2rem;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 3.2rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
+    &-items {
+        display: flex;
+        margin-top: 14.2rem;
+
+        @media screen and (max-width: 1310px) {
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 4.7rem;
+            margin-top: 4.25rem;
+        }
+    }
+}
