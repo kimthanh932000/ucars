@@ -10,8 +10,6 @@ import useIsMobile from 'hooks/useIsMobile';
 const NewCars = () => {
     const isMobile = useIsMobile();
 
-    console.log('is mobile', isMobile)
-
     const sliderSettings = {
         arrows: false,
         slidesToShow: 3,
@@ -63,7 +61,7 @@ const NewCars = () => {
                         isMobile ?
                             <Slider {...sliderSettings}>
                                 {
-                                    data.map(car => <Car {...car} />)
+                                    data.map((car, i) => <Car {...car} key={i}/>)
                                 }
                             </Slider> :
                             <>
@@ -71,7 +69,7 @@ const NewCars = () => {
                                     <img src={newRideImg} alt="" width="281" height="361" />
                                 </div>
                                 {
-                                    data.map(car => <Car {...car} />)
+                                    data.map((car, i) => <Car {...car} key={i}/>)
                                 }
                             </>
                     }

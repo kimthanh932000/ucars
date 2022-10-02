@@ -1,5 +1,8 @@
 .p-featured-car {
-    width: 35.1rem;
+    padding: 0 3.5rem;
+    @media screen and (max-width: 1199px) {
+        padding: 0 1.2rem;
+    }
 
     @media screen and (max-width: 768px) {
         background: #fff;
@@ -9,8 +12,9 @@
     }
 
     img {
+        max-width: 100%;
         @media screen and (max-width: 768px) {
-            width: 30.1rem;
+            width: 100%;
         }
     }
 

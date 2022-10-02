@@ -11,21 +11,23 @@ const Featured = () => {
     const sliderSettings = {
         arrows: false,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
+        centerMode: true,
         responsive: [
             {
-                breakpoint: 1170,
+                breakpoint: 1000,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 700,
+                breakpoint: 575,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    centerMode: false,
                 }
             }
         ]
@@ -46,7 +48,7 @@ const Featured = () => {
                 <div className="p-featured-list">
                     <Slider {...sliderSettings}>
                         {
-                            data.map(item => <Item {...item} />)
+                            data.map((item, i) => <Item {...item} key={i}/>)
                         }
                     </Slider>
                 </div>

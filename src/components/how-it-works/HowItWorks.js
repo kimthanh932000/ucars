@@ -11,7 +11,7 @@ const HowItWorks = () => {
                 <p className='p-hiw__text'>This is how our products works</p>
                 <div className='p-hiw-items'>
                     {
-                        data.map(item => <Item {...item} />)
+                        data.map((item, i) => <Item {...item} key={i}/>)
                     }
                 </div>
             </div>

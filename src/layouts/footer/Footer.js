@@ -69,17 +69,12 @@ const Footer = () => {
                         menuItems.map((menu, i) => {
                             if (menu.title !== 'Legal' || isMobile) {
                                 return (
-                                    <div className='menu' onClick={(e) => toggleMenu(e, i)}>
+                                    <div className='menu' key={i} onClick={(e) => toggleMenu(e, i)}>
                                         <div className='u-fw-600 menu__title'>{menu.title}</div>
                                         {
-                                            // menu.active && <ul className='menu-list'>
-                                            //     {
-                                            //         menu.items.map(item => <li className='menu__item'><a href="#">{item}</a></li>)
-                                            //     }
-                                            // </ul>
                                             <ul className={`menu-list ${menu.active ? 'u-d-block' : 'u-d-none'}`}>
                                                 {
-                                                    menu.items.map(item => <li className='menu__item'><a href="#">{item}</a></li>)
+                                                    menu.items.map((item, j) => <li className='menu__item' key={j}><a href="#">{item}</a></li>)
                                                 }
                                             </ul>
                                         }

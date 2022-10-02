@@ -11,8 +11,8 @@ const Type = () => {
             <div className='top'>
                 <div className="group">
                     {
-                        firstGroup.map(item => (
-                            <label className="checkbox">
+                        firstGroup.map((item, i) => (
+                            <label className="checkbox" key={i}>
                                 <input type="checkbox" name="type" />
                                 {item}
                                 <span className="checkmark"></span>
@@ -22,8 +22,8 @@ const Type = () => {
                 </div>
                 <div className="group">
                     {
-                        secondGroup.map(item => (
-                            <label className="checkbox">
+                        secondGroup.map((item, i) => (
+                            <label className="checkbox" key={i}>
                                 <input type="checkbox" name="type" />
                                 {item}
                                 <span className="checkmark"></span>
@@ -33,8 +33,8 @@ const Type = () => {
                 </div>
                 <div className="group">
                     {
-                        thirdGroup.map(item => (
-                            <label className="checkbox">
+                        thirdGroup.map((item, i) => (
+                            <label className="checkbox" key={i}>
                                 <input type="checkbox" name="type" />
                                 {item}
                                 <span className="checkmark"></span>
