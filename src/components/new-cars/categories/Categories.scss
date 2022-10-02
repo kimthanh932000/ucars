@@ -165,8 +165,10 @@
         left: 0;
         z-index: 1;
 
-        @media screen and (max-width: 440px) {
+        @media screen and (max-width: 768px) {
             width: 100%;
+            position: unset;
+            margin-top: 2rem;
         }
 
         .top {
